@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    List<DALWineHouse.Models.Usuarios> usuario = ViewBag.ListaUser;
+}
+
+<div class="text-center">
+    <h1>CLIENTES</h1>
+    <ul>
+        @foreach (var u in usuario)
+        {
+            <li>@u.Nome</li>
+        }
+    </ul>
+</div>
